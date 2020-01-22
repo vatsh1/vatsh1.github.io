@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 <style>
-  /*
+  body{ 
   background-color: grey;
   -webkit-animation-name: example;  
   -webkit-animation-duration: 2s; 
   animation-name: example;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  */
+}
 
-
+/*
   body {
       float: left;
       background-repeat: no-repeat;
@@ -42,13 +42,8 @@
   }
   
 }
-  /*
-  40% {
-    background-image: url('http://2.bp.blogspot.com/_CPIk9tauQ_o/SUma3ofEHFI/AAAAAAAAAtw/RaP8aECEhMc/s400/google-bot-850.jpg');
-    background-repeat: no-repeat;
-  }
-  }
-/*
+*/
+
 @-webkit-keyframes example {
   0%   {background-color: lightgreen;}
   25%  {background-color: yellow;}
@@ -62,7 +57,7 @@
   50%  {background-color: lightgreen;}
   100% {background-color: yellow;}
 }
-*/
+
 #navigation {
   list-style-type: none;
   margin: 0;
@@ -257,25 +252,27 @@ li.dropdown {
 
 
 
- body {
-      width:500px;
-      float: left;
-      background-color:skyblue;
-      -webkit-animation-name: test;
-      -webkit-animation-duration: 7s;
-      -webkit-animation-iteration-count: infinite;
-      animation-duration: 7s;
-      -webkit-animation-direction: alternate;
-      -webkit-animation-timing-function: linear;
-   }
-
-
- @-webkit-keyframes test {
-  30% {
-    background-color:lightgrey;
-  }
-  
+ body{ 
+  background-color: grey;
+  -webkit-animation-name: example;  
+  -webkit-animation-duration: 2s; 
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
+
+@-webkit-keyframes example {
+  0%   {background-color: lightgreen;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightgreen;}
+  100% {background-color: yellow;}
+}
+
+@keyframes example {
+  0%   {background-color: lightgreen;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightgreen;}
+  100% {background-color: yellow;}
 }
 
 </style>
