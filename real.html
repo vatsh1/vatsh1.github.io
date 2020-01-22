@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+<style>
+  /*
+  background-color: grey;
+  -webkit-animation-name: example;  
+  -webkit-animation-duration: 2s; 
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  */
+
+
+  body {
+      float: left;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url("ugoKXj.jpg");
+      -webkit-animation-name: test;
+      -webkit-animation-duration: 7s;
+      -webkit-animation-iteration-count: infinite;
+      animation-duration: 7s;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-timing-function: linear;
+   }
+
+
+ @-webkit-keyframes test {
+  30% {
+    background-image: url('wallpaper__code4.jpg');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 700px;
+    background-size: cover
+  }
+  
+}
+  /*
+  40% {
+    background-image: url('http://2.bp.blogspot.com/_CPIk9tauQ_o/SUma3ofEHFI/AAAAAAAAAtw/RaP8aECEhMc/s400/google-bot-850.jpg');
+    background-repeat: no-repeat;
+  }
+  }
+/*
+@-webkit-keyframes example {
+  0%   {background-color: lightgreen;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightgreen;}
+  100% {background-color: yellow;}
+}
+
+@keyframes example {
+  0%   {background-color: lightgreen;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightgreen;}
+  100% {background-color: yellow;}
+}
+*/
+#navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: -webkit-sticky-fixed;
+  top: 0;
+  width:1520px;
+  height:43px;
+  -webkit-transition: width 3s, height 1s; 
+  transition: width 3s, height 1s;
+}
+#navigation:hover{
+  width:1526px;
+  height:45px;
+}
+
+li {
+  float: left;
+}
+
+li #who, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  -webkit-transition: width 1s, height 4s; 
+  transition: width 1s, height 4s;
+  width:50px;
+}
+
+li #who:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  color:black;
+  width:70px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height:206px;
+  width:100px;
+  -webkit-transition: width 1s, height 1s; 
+  transition: width 1s, height 1s;
+}
+
+.dropdown-content #to {
+  width:128px;
+  height:17px;
+  color: brown;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Bangers', cursive;
+  font-size: 15px;
+}
+
+.dropdown-content #to:hover {
+  background-color: #f1f1f1;box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  color:black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#top:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#igm{
+  width:235px;
+  margin-left: 650px;
+  margin-top:150px;
+  border-radius: 50%;
+  -webkit-transition: width 2s, height 4s; 
+  transition: width 2s, height 4s;
+  box-shadow: 3px 4px 4px 0px rgb(227, 144, 33);
+  -webkit-animation: mymove 5s ; animation: mymove 5s ;
+}
+#igm:hover{
+  box-shadow: 0 24px 58px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:260px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  margin-left: 300px;
+}
+
+#div2 {-webkit-animation-timing-function: ease-out;}
+#div3 {-webkit-animation-timing-function: ease-in-out;}
+
+
+#div2 {animation-timing-function: ease-out;}
+#div3 {animation-timing-function: ease-in-out;}
+
+
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+
+
+#div2{
+  -webkit-animation: mymove 1s ; animation: mymove 1s ; font-size:40px; margin-left: 655px; margin-top:5px; border-bottom:1px solid orange ; font-family: 'Sedgwick Ave Display', cursive; position:absolute;text-shadow:2px solid green;
+}
+
+#div3{
+  -webkit-animation: mymove 2s ; animation: mymove 2s ; font-size:40px; color:#38765F; margin-top:65px; ; margin-left: 455px;background-color: black; border-bottom:1px solid orange ; font-family: 'Sedgwick Ave Display', cursive; position:absolute;  width:665px; border-radius: 5px;
+}
+#div2:hover{
+ 
+  color:black;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #navigation:hover{
+  width:500px;
+  height:45px;
+}
+  #igm{
+    width:235px;
+  margin-left: 142px;
+  margin-top:150px;
+  }
+  #navigation {
+    width:480px;
+    -webkit-transition:hidden; 
+  transition: hidden;
+  }
+ 
+  li #who, .dropbtn {
+  width:40px;
+}
+.dropdown-content {
+  width:20px;
+  height:206px;
+  
+}
+#div2{
+  background-color:hidden;
+  margin-top:20px;
+  margin-left:180px;
+  font-size:30px;
+}
+#div3{
+  margin-left:120px;
+  font-size:20px;
+  width:330px;
+}
+
+
+
+ body {
+      width:500px;
+      float: left;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url("Mobile.jpg");
+      -webkit-animation-name: test;
+      -webkit-animation-duration: 7s;
+      -webkit-animation-iteration-count: infinite;
+      animation-duration: 7s;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-timing-function: linear;
+   }
+
+
+ @-webkit-keyframes test {
+  30% {
+    background-image: url('Mobilesize.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+  
+}
+}
+
+</style>
+</head>
+<body id="demo" onload="myFunction()">
+
+<ul id="navigation">
+  <li id="top" style="font-family: 'Indie Flower', cursive; font-size: 19px; padding: 11px 16px; color:blue; text-shadow: 2px 2px 5px lightblue;  border-right:1px solid grey;"><i><b>Shubham</b></i></li>
+  <li ><a id="who" href="#" class="w3-bar-item w3-button w3-green" ><i class="fa fa-home"><b style="font-family: 'Bangers', cursive; letter-spacing: 2px;">home</b></i></a></li>
+  <li><a id="who" href="file:///D:/my%20folder%20for%20DEV/beba.html#">About</a></li>
+  <li><a id="who" href="#">Contact</a></li>
+  <li class="dropdown" >
+    <a href="javascript:void(0)" class="dropbtn">   More <i class="fa fa-caret-down"></i></a>
+    <div class="dropdown-content">
+      <a id="to" href="#">Education</a>
+      <a id="to" href="#">Skills</a>
+      <a id="to" href="#">Project</a>
+      <a id="to" href="#">my Gallery</a>
+      <a id="to" href="#">Contact</a>
+    </div>
+  </li>
+</ul>
+
+<div >
+<img id="igm" src="IMG_20200120_164721.jpg" alt="loading..." class="responsive">
+</div>
+<div >
+<span id="div2">Shubham kumar</span>
+</div>
+<div >
+<span id="div3" >Web developer / competitive programmer</span>
+</div>
+
+<script>
+function myFunction() {
+   document.getElementById("demo").style.background-image = "url("onload.gif")"; 
+  document.getElementById("demo").style.background-repeat = "no-repeat";
+  document.getElementById("demo").background-attachment = "fixed";      
+  document.getElementById("demo").background-size = "cover";  
+}
+</script>
+</body>
+</html>
