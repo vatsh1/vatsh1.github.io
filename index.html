@@ -231,10 +231,18 @@ li.dropdown {
     color:rgb(255, 255, 0);
 }
 .dropdown-content {
-  width:20px;
+  display: none;
+  position: absolute;
+  
+  min-width: 90;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   height:206px;
+  width:90px;
+  -webkit-transition: width 1s, height 1s; 
+  transition: width 1s, height 1s;
   box-shadow:2px 2px 5px lightgrey;
-  background-color:rgb(255, 255, 0);
+  background-color:rgb(255, 253, 194);
   
 }
   .dropdown-content #to {
