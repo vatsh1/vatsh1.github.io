@@ -237,7 +237,7 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   height:206px;
-  width:95px;
+  width:100px;
   -webkit-transition: width 1s, height 1s; 
   transition: width 1s, height 1s;
   box-shadow:2px 2px 5px lightgrey;
@@ -245,7 +245,7 @@ li.dropdown {
   
 }
   .dropdown-content #to {
-    width:95px;
+    width:100px;
     height:17px;
   }
   .dropdown-content #to:hover {
@@ -254,9 +254,18 @@ li.dropdown {
     width:95px;
     height:17px;
 }
+  .dropdown:hover .dropdown-content {
+        display: block;
+        box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         width:100px;
+
+}
 
   #to{
      text-shadow: 2px 2px 5px lightgrey;
+  }
+  #to:hover{
+    width:100px;
   }
 #div2{
   background-color:hidden;
