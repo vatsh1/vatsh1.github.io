@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <style>
+  #loading {
+    background: url('onload.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+  
+  
+  
   body{ 
    background-repeat: no-repeat;
       background-attachment: fixed;
@@ -294,7 +307,7 @@ li.dropdown {
 }
 </style>
 </head>
-<body id="demo" onload="myFunction()">
+<body>
 
 <ul id="navigation">
   <li id="top" style="font-family: 'Indie Flower', cursive; font-size: 19px; padding: 11px 16px; color:blue; text-shadow: 2px 2px 5px lightblue;  border-right:1px solid grey;"><i><b>Shubham</b></i></li>
@@ -322,14 +335,17 @@ li.dropdown {
 <div >
 <span id="div3" >Web developer / competitive programmer</span>
 </div>
+ <div id="loading"></div>
 
 <script>
-function myFunction() {
-   document.getElementById("demo").style.background-image = "url("onload.gif")"; 
-  document.getElementById("demo").style.background-repeat = "no-repeat";
-  document.getElementById("demo").background-attachment = "fixed";      
-  document.getElementById("demo").background-size = "cover";  
+function hideLoader() {
+    $('#loading').hide();
 }
+
+$(window).ready(hideLoader);
+
+// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+setTimeout(hideLoader, 20 * 1000);
 </script>
 </body>
 </html>
